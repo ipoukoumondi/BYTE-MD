@@ -75,7 +75,7 @@ module.exports = {
   menu: process.env.MENU || "y",
 
   //Prefix variable
-  HANDLERS: process.env.PREFIX || "🤡",
+  HANDLERS: process.env.PREFIX || "€",
   BRANCH: process.env.BRANCH || "main",
   VERSION: process.env.VERSION || "1.0.0",
   caption: process.env.CAPTION || "*Powered By TalkDrove*",
