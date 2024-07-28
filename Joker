@@ -1,0 +1,107 @@
+
+const fs = require("fs-extra");
+if (fs.existsSync(".env"))
+  require("dotenv").config({ path: __dirname + "/.env" });
+global.audio = "true";
+global.video = "true";
+global.port = process.env.PORT;
+global.appUrl = process.env.APP_URL || "https://telegra.ph/file/52db98b758f440dbe.jpg";
+global.email = "TalkDrove@gmail.com";
+global.location = "Lahore,Pakistan.";
+global.mongodb = process.env.MONGODB_URI || "mongodb+srv://Hamza:3800380ww@cluster0.uwommwq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+global.allowJids = process.env.ALLOW_JID || "923072380380@s.whatsapp.net";
+global.blockJids = process.env.BLOCK_JID || "null";
+global.DATABASE_URL = process.env.DATABASE_URL || "";
+global.timezone = process.env.TZ || process.env.TIME_ZONE || "Asia/Karachi";
+global.github = process.env.GITHUB || "https://github.com/HyHamza/BYTE-MD";
+global.gurl = process.env.GURL || "https://whatsapp.com/channel/0029VaNRcHSJP2199iMQ4W0l";
+global.website = process.env.GURL || "https://whatsapp.com/channel/0029VaNRcHSJP2199iMQ4W0l";
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://raw.githubusercontent.com/HyHamza/HyHamza/main/Images/logo.jpg";
+global.devs = "923072380380";
+global.sudo = process.env.SUDO || "242066328691";
+global.owner = process.env.OWNER_NUMBER || "242066328691";
+global.style = process.env.STYLE || "3";
+global.gdbye = process.env.GOODBYE || "false";
+global.wlcm = process.env.WELCOME || "false";
+global.warncount = process.env.WARN_COUNT || 3;
+global.disablepm = process.env.DISABLE_PM || "false";
+global.disablegroup = process.env.DISABLE_GROUPS || "false",
+global.MsgsInLog = process.env.MSGS_IN_LOG || "false";
+global.userImages = process.env.USER_IMAGES || "true";
+global.waPresence = process.env.WAPRESENCE || "available";
+global.readcmds = process.env.READ_COMMAND || "true";
+global.readmessage = process.env.READ_MESSAGE || "false";
+global.readmessagefrom = process.env.READ_MESSAGE_FROM || "false";
+global.read_status = process.env.AUTO_READ_STATUS || "false";
+global.save_status = process.env.AUTO_SAVE_STATUS || "false";
+global.save_status_from = process.env.SAVE_STATUS_FROM || "all";
+global.read_status_from = process.env.READ_STATUS_FROM || "all";
+
+global.api_smd = "https://HyHamza.vercel.app";
+global.scan = "https://byte-session.vercel.app/";
+
+
+
+
+global.SESSION_ID =
+  process.env.SESSION_ID ||
+
+
+
+
+
+  
+
+
+//____________________________________________________________________________________________
+  
+  
+  
+  Byte;;;eyJub2lzZUtleSI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiYU5UQms5aTVJK2pxbU81QUkrbTFmeUdhRVlzaVN1THI0WTNQUFl1REEzRT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoieVk1dmJMMVpHd3BPbVZjbDFxTkZwZUkveXZWelR4VTZCTnJ2TktLb1JFUT0ifX0sInBhaXJpbmdFcGhlbWVyYWxLZXlQYWlyIjp7InByaXZhdGUiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIrS0U5ZDVIekdyZkorK3FodTNBRjhVZW0rTW1NZkE2a3FhWjNNVDhRYzFzPSJ9LCJwdWJsaWMiOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiIwMFY4dXAwUlliRnVjNTdjQTU0TXpQSmxjOW01MmQwN1A5dGNVSzVnQWs4PSJ9fSwic2lnbmVkSWRlbnRpdHlLZXkiOnsicHJpdmF0ZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IklDclMyWjBZSjg5VGRoZTF4THhmcjEyeENSV1pmRE9udktUVlVtaHpyMzA9In0sInB1YmxpYyI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkNsUmFLWG8waDhKejZoZk12dDRZeFlvYXRxT25raUZ4ZXJscjF5VVh5eVk9In19LCJzaWduZWRQcmVLZXkiOnsia2V5UGFpciI6eyJwcml2YXRlIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoia005a0xyYkVVeFVac0kxNi94cnRqSWdFMEJNUEJScjZUMWxVbDhnMW9tWT0ifSwicHVibGljIjp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQUVzUE9FeUVEN25FNUhlamhxcXNCYjdscUJDNmVaMjd6OTFHM3V4cVNpOD0ifX0sInNpZ25hdHVyZSI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6Im1UQjY5NkowbkMwbTJvWlE5UEppRjlGbG5LMy9NSG4rN1gzN2RDQnJFRndxM0IwdlN1cElkK2dJc1gyeTkrRk5COGhKdDZhSTl1TU9lRGUzV0hVTERnPT0ifSwia2V5SWQiOjF9LCJyZWdpc3RyYXRpb25JZCI6OTksImFkdlNlY3JldEtleSI6IlJtTHNLeXAvenIvNUhRR04ydGRsU1BZYnVRNzdCUXRLVFUzVCtaNlFRUGs9IiwicHJvY2Vzc2VkSGlzdG9yeU1lc3NhZ2VzIjpbXSwibmV4dFByZUtleUlkIjozMSwiZmlyc3RVbnVwbG9hZGVkUHJlS2V5SWQiOjMxLCJhY2NvdW50U3luY0NvdW50ZXIiOjAsImFjY291bnRTZXR0aW5ncyI6eyJ1bmFyY2hpdmVDaGF0cyI6ZmFsc2V9LCJkZXZpY2VJZCI6Imx2QmRGdlFNVDBHNFJqcWJwYlpqOVEiLCJwaG9uZUlkIjoiNTNlOTEzY2UtYWYxNS00NjY3LWFiMTItNmMwYjlmODY2MTNmIiwiaWRlbnRpdHlJZCI6eyJ0eXBlIjoiQnVmZmVyIiwiZGF0YSI6IkVPZ1RhSmNCbEVIOE9zMzQ0LzFNaVRnekxMRT0ifSwicmVnaXN0ZXJlZCI6dHJ1ZSwiYmFja3VwVG9rZW4iOnsidHlwZSI6IkJ1ZmZlciIsImRhdGEiOiI3eXR6UVZuMS9ORkI0aEg0OVh6VW8rbEx1elE9In0sInJlZ2lzdHJhdGlvbiI6e30sInBhaXJpbmdDb2RlIjoiUlFOUUhTMVEiLCJtZSI6eyJpZCI6IjI0MjA2NjMyODY5MTo3N0BzLndoYXRzYXBwLm5ldCIsIm5hbWUiOiLEkOKCs+KxpOKCrSBKw5jigq3JhuKxpCJ9LCJhY2NvdW50Ijp7ImRldGFpbHMiOiJDSi9qaG9rREVMZldtTFVHR0FrZ0FDZ0EiLCJhY2NvdW50U2lnbmF0dXJlS2V5Ijoic1kvSXRMNkN5SlQ2MS8ycHAwOWZhNGJHVFJwdEhSQVkzZUt3RFpvdUtIaz0iLCJhY2NvdW50U2lnbmF0dXJlIjoiNXNqKzVEc3c2TEpYdnJxWEZUWldURm5hV282dXpzc2pJOWQ4cWpVaTNobUJrMjhaNno3enN6dWRWM2Y2UktOYi8rRFFmRVdSYjd6M2ZsWHByTEdMQVE9PSIsImRldmljZVNpZ25hdHVyZSI6IkNkUktkc0JQV01ONmw0cW1ZWDVqcEJOaEhtTDNINmU3N1JaS3YvSDlHUEVZdTF0NUpuSjRzZWRsYXhXNVIyRWp6SFBLQ0w5REI5S29NR1RqREcydkRRPT0ifSwic2lnbmFsSWRlbnRpdGllcyI6W3siaWRlbnRpZmllciI6eyJuYW1lIjoiMjQyMDY2MzI4NjkxOjc3QHMud2hhdHNhcHAubmV0IiwiZGV2aWNlSWQiOjB9LCJpZGVudGlmaWVyS2V5Ijp7InR5cGUiOiJCdWZmZXIiLCJkYXRhIjoiQmJHUHlMUytnc2lVK3RmOXFhZFBYMnVHeGswYWJSMFFHTjNpc0EyYUxpaDUifX1dLCJwbGF0Zm9ybSI6InNtYmEiLCJsYXN0QWNjb3VudFN5bmNUaW1lc3RhbXAiOjE3MjIxNjYwODQsIm15QXBwU3RhdGVLZXlJZCI6IkFBQUFBS0ZkIn0=
+
+
+
+//________________________________________________________________________
+
+
+
+
+
+
+
+
+
+module.exports = {
+  menu: process.env.MENU || "∆",
+
+  //Prefix variable
+  HANDLERS: process.env.PREFIX || ".",
+  BRANCH: process.env.BRANCH || "main",
+  VERSION: process.env.VERSION || "1.0.0",
+  caption: process.env.CAPTION || "*Powered By TalkDrove*",
+  author: process.env.PACK_AUTHER || "TalkDrove",
+  packname: process.env.PACK_NAME || "༆◍𝗗𝗔𝗥𝗞 𝗝𝗢𝗞𝗘𝗥◓༆",
+  botname: process.env.BOT_NAME || "Byte-Md",
+  ownername: process.env.OWNER_NAME || "☬☬𝐷𝐴𝑅𝐾 𝐽𝑂𝐾𝐸𝑅☫☫",
+  errorChat: process.env.ERROR_CHAT || "false",
+  KOYEB_API: process.env.KOYEB_API || "false",
+  REMOVE_BG_KEY: process.env.REMOVE_BG_KEY || "false",
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY || "false",
+  HEROKU_API_KEY: process.env.HEROKU_API_KEY || "false",
+  HEROKU_APP_NAME: process.env.HEROKU_APP_NAME || "false",
+  antilink_values: process.env.ANTILINK_VALUES || "all",
+  HEROKU: process.env.HEROKU_APP_NAME && process.env.HEROKU_API_KEY,
+  aitts_Voice_Id: process.env.AITTS_ID || "37",
+  ELEVENLAB_API_KEY: process.env.ELEVENLAB_API_KEY || "false",
+  WORKTYPE: process.env.WORKTYPE || process.env.MODE || "privé",
+  LANG: (process.env.THEME || "BYTE").toUpperCase(),
+};
+global.rank = "updated";
+global.isMongodb = false;
+let file = require.resolve(__filename);
+fs.watchFile(file, () => {
+  fs.unwatchFile(file);
+  console.log(`Update'${__filename}'`);
+  delete require.cache[file];
+  require(file);
+});
